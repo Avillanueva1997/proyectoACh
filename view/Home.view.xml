@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="sap.ui.app01.controller.Home"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    xmlns:u="sap.ui.unified"
+	xmlns="sap.m"
+	xmlns:microchart="sap.suite.ui.microchart"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards">    
+	<Page
+	showHeader="false"
+	enableScrolling="false">
+		<core:Fragment fragmentName='sap.ui.app01.view.Fragments.HeaderPrincipal' type='XML'/>
+		<content>
+			<TileContainer
+			id="container"
+			tileDelete="handleTileDelete"
+			tiles="{/TileCollection}">
+				<StandardTile
+					icon="{icon}"
+					type="{type}"
+					number="{number}"
+					numberUnit="{numberUnit}"
+					title="{title}"
+					info="{info}"
+					infoState="{infoState}"
+					press="onPress" />
+			</TileContainer>
+		</content>
+	</Page>
+</mvc:View>

@@ -1,0 +1,179 @@
+{
+  "_version": "1.1.0",
+  "sap.app": {
+	"_version": "1.1.0",
+	"id": "sap.ui.app01",
+	"type": "application",
+	"i18n": "i18n/i18n.properties",
+	"title": "Aceros Chilca",
+	"description": "{{appDescription}}",
+	"applicationVersion": {
+	  "version": "1.0.0"
+	}
+  },
+  "sap.ui": {
+	"_version": "1.1.0",
+	"technology": "UI5",
+	"deviceTypes": {
+	  "desktop": true,
+	  "tablet": true,
+	  "phone": true
+	},
+	"supportedThemes": [
+	  "sap_belize"
+	]
+  },
+  "sap.ui5": {
+	"_version": "1.1.0",
+	"rootView": "sap.ui.app01.view.App",
+	"dependencies": {
+	  "minUI5Version": "1.30",
+	  "libs": {
+		"sap.m": {}
+	  }
+	},
+	"models": {
+	  "i18n": {
+		"type": "sap.ui.model.resource.ResourceModel",
+		"settings": {
+		  "bundleName": "sap.ui.app01.i18n.i18n"
+		}
+	  }
+	},
+	"routing": {
+		"config": {
+			"routerClass": "sap.m.routing.Router",
+			"viewType": "XML",
+			"viewPath": "sap.ui.app01.view",
+			"controlId": "app",
+			"controlAggregation": "pages",
+			"transition": "slide"
+		},
+		"routes": [
+            {
+			"pattern": "",
+			"name": "login",
+			"target": "login"
+            },
+            {
+			"pattern": "home",
+			"name": "home",
+			"target": "home"
+            },
+            {
+			"pattern": "team",
+			"name": "team",
+			"target": "team"
+            },
+            {
+			"pattern": "kpi",
+			"name": "kpi",
+			"target": "kpi"
+            },
+            {
+			"pattern": "homeSPRO",
+			"name": "homeSPRO",
+			"target": "homeSPRO"
+            },
+            {
+			"pattern": "spro01",
+			"name": "spro01",
+			"target": "spro01"
+            },
+            {
+			"pattern": "spro02",
+			"name": "spro02",
+			"target": "spro02"
+            },
+            {
+			"pattern": "spro03",
+			"name": "spro03",
+			"target": "spro03"
+            },
+            {
+			"pattern": "spro04",
+			"name": "spro04",
+			"target": "spro04"
+            },
+            {
+			"pattern": "spro05",
+			"name": "spro05",
+			"target": "spro05"
+            },
+            {
+			"pattern": "spro06",
+			"name": "spro06",
+			"target": "spro06"
+            }
+        ],
+		"targets": {
+			"login": {
+					"path": "sap.ui.app01.view",
+					"viewName": "Login",
+					"viewId" : "viewLogin",
+					"viewLevel" : 1
+			},
+			"home": {
+					"path": "sap.ui.app01.view",
+					"viewName": "Home",
+					"viewId" : "viewHome",
+					"viewLevel" : 2
+			},
+			"homeSPRO": {
+					"path": "sap.ui.app01.view",
+					"viewName": "HomeSPRO",
+					"viewId" : "viewHomeSPRO",
+					"viewLevel" : 2
+			},
+            "team": {
+                "path": "sap.ui.app01.view",
+                "viewName": "Team",
+                "viewId" : "viewTeam",
+                "viewLevel" : 2	
+            },
+            "kpi": {
+                "path": "sap.ui.app01.view",
+                "viewName": "Kpi",
+                "viewId" : "viewKpi",
+                "viewLevel" : 2	
+            },
+            "spro01": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO01",
+                "viewId" : "viewSPRO01",
+                "viewLevel" : 3	
+            },
+            "spro02": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO02",
+                "viewId" : "viewSPRO02",
+                "viewLevel" : 3	
+            },
+            "spro03": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO03",
+                "viewId" : "viewSPRO03",
+                "viewLevel" : 3	
+            },
+            "spro04": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO04",
+                "viewId" : "viewSPRO04",
+                "viewLevel" : 3	
+            },
+            "spro05": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO05",
+                "viewId" : "viewSPRO05",
+                "viewLevel" : 3	
+            },
+            "spro06": {
+                "path": "sap.ui.app01.view",
+                "viewName": "SPRO/SPRO06",
+                "viewId" : "viewSPRO06",
+                "viewLevel" : 3	
+            }
+		}
+	}
+  }
+}

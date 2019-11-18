@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="sap.ui.app01.controller.Login"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:forms="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+	xmlns="sap.m">
+    <Page title="Bienvenid@" id="pageLogin">
+        <content>
+            <VBox fitContainer="false" justifyContent="Center" alignItems="Center" alignContent="Center">
+                <Image src="assets/images/aceros-chilca.png" alt="Aceros Chilca"/>
+            </VBox>
+            <VBox fitContainer="false" justifyContent="Center" alignItems="Center" alignContent="Center">
+                <items>
+                     <Input width="15rem" placeholder="Usuario" value="{/user}"/>
+                     <Input width="15rem" placeholder="Contraseña" type="Password" value="{/password}"/>
+                     <Button width="17rem" text="Ingresar" type="Emphasized" press="onLogin"/>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
